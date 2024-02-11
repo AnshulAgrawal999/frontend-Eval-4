@@ -2,9 +2,9 @@ import { useState } from 'react'  ;
 
 import React from 'react'  ;
 
-import { AllRoutes } from '../routes/AllRoutes'  ;
+import { AllRoutes } from './routes/AllRoutes'  ;
 
-import { Navbar } from '../routes/Navbar'  ;
+import { Navbar } from './routes/Navbar'  ;
 
 function App() {
 
