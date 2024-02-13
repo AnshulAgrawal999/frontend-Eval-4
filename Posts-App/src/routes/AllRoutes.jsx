@@ -1,6 +1,6 @@
 import React from "react"  ;
 
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'  ;
+import { Routes, Route } from 'react-router-dom'  ;
 
 import HomePage from '../pages/home'  ;
 
@@ -14,14 +14,12 @@ import PostsPage from '../pages/posts'  ;
 const AllRoutes = () => {
 
     return (
-    <Router>
-        <Switch>
-            <Route path="/" exact component={HomePage} />
-            <Route path="/signup" component={SignupPage} />
-            <Route path="/login" component={LoginPage} />
-            <Route path="/posts" component={PostsPage} />
-        </Switch>
-    </Router>
+    <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/signup" element={ < SignupPage />} />
+            <Route path="/login" element={< LoginPage />} />
+            <Route path="/posts" element={ <PostsPage />} />
+    </Routes>
     )
 }
 
